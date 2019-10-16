@@ -1,7 +1,7 @@
 "use strict";
 const express = require('express')
 const DB = require('./db');
-const config = rquire('./config');
+const config = require('./config');
 const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken');
 const bodyParser = require('body-parser');
