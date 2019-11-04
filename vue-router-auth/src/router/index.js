@@ -8,7 +8,7 @@ import Admin from '@/components/Admin'
 
 Vue.use(Router)
 
-export default new Router({
+let router = new Router({
   routes: [
     {
       path: '/',
@@ -51,7 +51,7 @@ export default new Router({
   ]
 })
 
-Router.beforeEach((to, from, next) => {
+router.beforeEach((to, from, next) => {
   if(to.matched.some(record => record.meta.requiresAuth)) {
     if(localStorage.getItem('jwt') == null) {
       next({

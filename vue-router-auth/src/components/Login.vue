@@ -13,7 +13,7 @@
                 </div>
             </div>
             <div>
-                <button type="submit" @click="handlesubmit">
+                <button type="submit" @click="handleSubmit">
                     Login
                 </button>
             </div>
